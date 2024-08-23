@@ -1,0 +1,185 @@
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+
+    font-family: Poppins, sans-serif;
+    color: #fcfcfc; /* Set font color to white */
+    font-weight: bold; /* Set font weight to bold */
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+main{
+    width: 400px;
+    height: max-content;
+    min-height: 300px;
+    background-color: rgba(255,255,255,0.06);
+    border-radius: 30px;
+    backdrop-filter: blur(20px);
+
+    box-shadow: 20px 20px 22px rgba(0,0,0,0.2);
+    padding: 30px;
+    box-sizing: border-box;
+    font-weight: bold; /* Set font weight to bold */
+}
+main form{
+    background-color: rgba(255,255,255,0.06);
+    display: flex;
+    border-radius: 30px;
+    justify-content: space-between;
+}
+main form input, 
+main form button{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #fcfcfc; /* Set font color to white */
+}
+main form i{
+    color: #fcfcfc; /* Set font color to white */
+    opacity: 0.7;
+}
+main .result{
+    padding-top: 20px;
+    text-align: center;
+}
+main .result .name{
+    font-weight: bold;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+main .temperature img{
+    width: 150px;
+    filter: drop-shadow(0 10px 50px #e1e1e1);
+}
+main .temperature figcaption{
+    font-size: 3em;
+}
+main .description{
+    padding: 10px 0 30px;
+}
+main ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+main li{
+    background-color: #f78a55;
+    color: #fcfcfc; /* Set font color to white */
+    border-radius: 10px;
+    padding: 20px 10px;
+    backdrop-filter: blur(50px);
+    background-image: linear-gradient(
+        to bottom,
+        transparent 50%,
+        #0003 50%
+    );
+    font-weight: bold;
+    font-size: small;
+}
+main ul li i{
+    color: #fcfcfc; /* Set font color to white */
+    font-size: 2em;
+    margin: 20px 0;
+    display: block!important;
+}
+main li:nth-child(2){
+    backdrop-filter: blur(50px);
+    background-color: #b56291;
+}
+main li:nth-child(3){
+    backdrop-filter: blur(50px);
+    background-color: #48567b;
+}
+main.error{
+    animation: errorEffect 0.3s linear 1;
+}
+.copyright {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 12px;
+    color: #ccc;
+  }
+@keyframes errorEffect{
+    0%{
+        transform: translate(10px, 5px)
+    }
+    25%{
+        transform: translate(-5px, 0)
+    }
+    50%{
+        transform: translate(8px, 2px)
+    }
+    75%{
+        transform: translate(-2px, 5px)
+    }
+    100%{
+        transform: translate(0, 0); 
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+  }
+  
+  .result {
+    padding: 20px;
+    margin: 20px auto;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .name figcaption {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .temperature figcaption {
+    font-size: 48px;
+  }
+  
+  .description {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  #useLocation {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  /* Gaya tambahan untuk kondisi error */
+  .error {
+    border: 2px solid red;
+  }
